@@ -14,7 +14,7 @@ public class Main {
 
             try {
 
-                textoMenu();
+                Menus.menuPrincipal();
                 opcoes = scan.nextInt();
 
                 switch (opcoes) {
@@ -60,7 +60,7 @@ public class Main {
 
                             Tarefa tarefaEditar = pilhaTarefasPendentes.peek(numeroTarefa);
 
-                            System.out.println("1 - EDITAR TITULO\n2 - EDITAR DATA\n3 - MARCAR COMO CONCLUIDA\n4 - EXCLUIR TAREFA");
+                            Menus.menuEditar();
                             int resposta = scan.nextInt();
 
                             switch (resposta) {
